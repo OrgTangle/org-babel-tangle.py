@@ -33,7 +33,7 @@ Also create corresponding entries in dests and counter if they don't already exi
         except ValueError:
             return False
 
-        dest = os.path.realpath(line[beg+1])
+        dest = os.path.realpath(os.path.expanduser(line[beg+1]))
         if not dest in dests.keys():
             fo = open(dest, 'w')
             dests[dest] = fo
