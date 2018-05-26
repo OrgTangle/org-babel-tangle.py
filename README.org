@@ -16,6 +16,13 @@ wyag-tests .......................................................... 75 lines
 
 If no file is passed to command-line, it will read from =stdin=.
 
-* Compatibility
+* Limitations
 
-I've done a few tests, and the files this program produces are bit-for-bit identical to the real =org-babel-tangle= output.  If you notice a difference, please open an issue.
+This program is extremely dumb, and lacks quite a few Org-mode
+features, most notably [[https://orgmode.org/manual/Noweb-reference-syntax.html][noweb]].  But basically, all it does is routing
+lines of text to output files and fixing indentation --- everything
+else is unsupported.
+
+I've done a few tests, and the files this program produces are
+bit-for-bit identical to the real =org-babel-tangle= output.  If you
+notice a difference, please open an issue.
